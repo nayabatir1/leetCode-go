@@ -13,8 +13,6 @@ func twoSum(nums []int, target int) []int {
 				map_1[nums[j]] = j
 			}
 		}
-		fmt.Println(map_1, temp, map_1[temp])
-
 		if _, ok := map_1[temp]; ok {
 			return []int{i, map_1[temp]}
 		}
